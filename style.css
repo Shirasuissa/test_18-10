@@ -146,3 +146,71 @@ main{
 .action-buttons .material-symbols-outlined {
     font-size: 18px;
 }
+
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 12px;
+    margin-top: 18px;
+}
+.card{
+   background-color: #16121E;
+   border: 1px solid #181d24;
+   border-radius: 10px;
+   padding: 15px;
+}
+.card1{
+    border-left: 3px solid #088121;
+}
+.card2{
+    border-left: 3px solid #D3A32C;
+}
+.card3{
+    border-left: 3px solid #088121;
+}
+.card4{
+    border-left: 3px solid #D3A32C;
+}
+.card-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    color: #494856;
+}
+.level{
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 9px;
+    font-weight: bold;
+}
+.level1{
+    color: #8A2043;
+    border: 1px solid #8A2043;
+}
+.level2{
+    color: #D3A32C;
+     border: 1px solid #D3A32C;
+}
+.level3{
+    color: #088121;
+     border: 1px solid #088121;
+}
+.level4{
+    color: #D3A32C;
+     border: 1px solid #D3A32C;
+}
+.card h3{
+    font-size: 13px;
+    margin: 12px 0;
+}
+.progress-num progress{
+    width: 80%;
+    height: 10px;
+    accent-color: #0AA52B;
+}
+.progress-num span{
+    color: #088121;
+    font-size: 10px;
+}
