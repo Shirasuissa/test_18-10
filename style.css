@@ -52,10 +52,77 @@ body{
 .logo .material-symbols-outlined {
     font-size: 20px;
 }
-
-
 @keyframes blink{
     0%{opacity: 1;}
     50%{opacity: 0.3;}
     100%{opacity: 1;}
 }
+
+
+main{
+    width: 80%;
+    margin: 20px auto;
+}
+.main-box{
+    width: 100%;
+    min-height: 300px;
+    background-color: #16121E;
+    border: 1px solid #181d24;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+}
+.radar-side{
+    width: 45%;
+    display: flex;
+    position: relative;
+}
+.number-side{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.number{
+    color: #088121;
+    font-size: 20px;
+    font-weight: bold;
+}
+.signal-box p{
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #494856;
+}
+
+
+.radar, .sweep {position: absolute;}
+.radar {
+  overflow: hidden; 
+  top: 50%; left: 50%;
+  margin: -117px;
+  width: 248px; height: 248px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.5),
+    inset 0 0 0 1px hsla(0, 0%, 100%, 0.15);
+  background: 
+    repeating-radial-gradient(transparent 0 23px, #287a33 24px 26px, #0000 27px), 
+    linear-gradient(transparent 49.75%, #0e4c42 0 50.25%, transparent 0) 50% no-repeat,
+    linear-gradient(90deg, transparent 49.75%, #0e4c42 0 50.25%, transparent 0) 50% no-repeat,
+    linear-gradient(#333, #111);
+  background-size: 100%, 218px 218px, 218px 218px, 100%;
+}
+.sweep {
+  box-sizing: border-box;
+  top: 16px; left: 16px;
+  border-right: solid 1px hsla(145, 50%, 40%, .3);
+  width: 108px; height: 108px;
+  border-radius: 100% 0 0 0;
+  transform-origin: 100% 100%;
+  background: linear-gradient(50deg, rgba(34, 34, 34, 0) 56%, hsla(145, 50%, 40%, 1));
+  animation: sweep 5s infinite linear;
+}
+@keyframes sweep { to { transform: rotate(360deg); } }
