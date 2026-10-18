@@ -126,3 +126,23 @@ main{
   animation: sweep 5s infinite linear;
 }
 @keyframes sweep { to { transform: rotate(360deg); } }
+
+
+.action-buttons{
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+}
+.action-buttons button{
+    display: flex;
+    align-items: center;
+    background-color: #16121E;
+    color: white;
+    border: 1px solid #181d24;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    gap: 7px    ;
+}
+.action-buttons .material-symbols-outlined {
+    font-size: 18px;
+}
